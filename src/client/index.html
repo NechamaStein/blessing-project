@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Greeting Generator</title>
+</head>
+<body>
+  <h1>Greeting Generator</h1>
+  <form id="greetingForm">
+    <label for="eventType">Event Type:</label>
+    <select name="eventType" id="eventType">
+      <option value="birthday">Birthday</option>
+      <!-- Add more event types as needed -->
+    </select>
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+
+    <label for="greetingType">Greeting Type:</label>
+    <select name="greetingType" id="greetingType">
+      <option value="short">Short</option>
+      <option value="long">Long</option>
+      <!-- Add more greeting types as needed -->
+    </select>
+
+    <label for="atmosphere">Atmosphere:</label>
+    <input type="text" name="atmosphere" id="atmosphere" required>
+
+    <button type="submit">Generate Greeting</button>
+  </form>
+
+  <div id="generatedGreeting"></div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
